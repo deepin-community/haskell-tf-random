@@ -1,0 +1,89 @@
+haskell-tf-random (0.5-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:41:58 +0800
+
+haskell-tf-random (0.5-10) unstable; urgency=medium
+
+  * Sourceful upload for GHC 8.8.
+
+ -- Clint Adams <clint@debian.org>  Sun, 31 May 2020 08:30:04 -0400
+
+haskell-tf-random (0.5-9) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Set Rules-Requires-Root to no.
+
+  [ Ilias Tsitsimpis ]
+  * Bump debhelper compat level to 10
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Sun, 30 Sep 2018 21:23:04 +0300
+
+haskell-tf-random (0.5-8) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Change Priority to optional. Since Debian Policy version 4.0.1,
+    priority extra has been deprecated.
+  * Use the HTTPS form of the copyright-format URL
+  * Modify d/watch and Source field in d/copyright to use HTTPS
+  * Declare compliance with Debian policy 4.1.1
+  * Use salsa.debian.org URLs in Vcs-{Browser,Git} fields
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 4.1.4.
+
+ -- Clint Adams <clint@debian.org>  Mon, 09 Apr 2018 20:05:07 -0400
+
+haskell-tf-random (0.5-7) unstable; urgency=medium
+
+  * Upload to unstable as part of GHC 8 transition.
+
+ -- Clint Adams <clint@debian.org>  Thu, 27 Oct 2016 18:36:32 -0400
+
+haskell-tf-random (0.5-6) experimental; urgency=medium
+
+  [ Dmitry Bogatov ]
+  * Use secure (https) uri in Vcs-Git field in 'debian/control'
+  * Bump standards version to 3.9.8 (no changes needed)
+
+  [ Gianfranco Costamagna ]
+  * Fix VCS fields
+
+  [ Clint Adams ]
+  * Tweak license short name in debian/copyright.
+  * Temporarily build-depend on ghc 8.
+
+ -- Clint Adams <clint@debian.org>  Fri, 01 Jul 2016 10:41:44 +0200
+
+haskell-tf-random (0.5-5) unstable; urgency=medium
+
+  * Switch Vcs-Git/Vcs-Browser headers to new location.
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 14:55:10 -0500
+
+haskell-tf-random (0.5-4) experimental; urgency=medium
+
+  * Bump standards-version to 3.9.6
+  * Depend on haskell-devscripts >= 0.10 to ensure that this package
+    builds against GHC in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 10:28:51 +0200
+
+haskell-tf-random (0.5-3) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 27 Apr 2015 11:54:16 +0200
+
+haskell-tf-random (0.5-2) experimental; urgency=medium
+
+  * Depend on haskell-devscripts 0.9, found in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Sat, 20 Dec 2014 17:12:24 +0100
+
+haskell-tf-random (0.5-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 27 Jul 2014 21:27:22 +0200

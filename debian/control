@@ -1,0 +1,89 @@
+Source: haskell-tf-random
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders: Joachim Breitner <nomeata@debian.org>
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends: debhelper (>= 10),
+ haskell-devscripts (>= 0.13),
+ cdbs,
+ ghc (>= 8),
+ ghc-prof,
+ libghc-primitive-dev (>= 0.3),
+ libghc-primitive-prof,
+ libghc-random-dev,
+ libghc-random-prof,
+Build-Depends-Indep: ghc-doc,
+ libghc-primitive-doc,
+ libghc-random-doc,
+Standards-Version: 4.5.0
+Homepage: https://hackage.haskell.org/package/tf-random
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-tf-random
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-tf-random]
+X-Description: high-quality splittable pseudorandom number generator
+ This package contains an implementation of a high-quality splittable
+ pseudorandom number generator. The generator is based on a cryptographic hash
+ function built on top of the ThreeFish block cipher. See the paper Splittable
+ Pseudorandom Number Generators Using Cryptographic Hashing by Claessen, Pałka
+ for details and the rationale of the design.
+ .
+ The package provides the following:
+ .
+  * A splittable PRNG that implements the standard System.Random.RandomGen class.
+ .
+  * The generator also implements an alternative version of the
+    System.Random.TF.Gen.RandomGen class (exported from System.Random.TF.Gen),
+    which requires the generator to return pseudorandom integers from the full
+    32-bit range, and contains an n-way split function.
+ .
+  * An alternative version of the Random class is provided, which is linked to
+    the new RandomGen class, together with Random instances for some integral
+    types.
+ .
+  * Two functions for initialising the generator with a non-deterministic
+    seed: one using the system time, and one using the /dev/urandom UNIX
+    special file.
+ .
+ Please note that even though the generator provides very high-quality
+ pseudorandom numbers, it has not been designed with cryptographic applications
+ in mind.
+
+Package: libghc-tf-random-dev
+Architecture: any
+Depends: ${haskell:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Provides: ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-tf-random-prof
+Architecture: any
+Depends: ${haskell:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Provides: ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-tf-random-doc
+Architecture: all
+Section: doc
+Depends: ${haskell:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
