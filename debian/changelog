@@ -1,8 +1,8 @@
-haskell-tf-random (0.5-deepin1) unstable; urgency=medium
+haskell-tf-random (0.5-11) unstable; urgency=medium
 
-  * Rebuild
+  * Sourceful upload for GHC 9.
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:41:58 +0800
+ -- Clint Adams <clint@debian.org>  Thu, 16 Jun 2022 13:06:06 -0400
 
 haskell-tf-random (0.5-10) unstable; urgency=medium
 
